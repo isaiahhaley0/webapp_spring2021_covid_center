@@ -18,7 +18,7 @@
 		<h2 class="headerformat">Screener Questions</h2>
 		<article>
 			<h3 class= "headerformat">Identifying Information</h3><br>
-			<form onsubmit = "return validateForm()" id = "mainForm">
+			<form onsubmit = "return validateForm()" id = "mainForm" novalidate>
 				<fieldset class = "border redborder form-group w-auto">
 					<legend class ="w-auto legendformat">Part 1</legend>
 					<div class = "form-group col-md-auto">
@@ -122,15 +122,15 @@
 
 
 
-					<div class="form-group col-md-auto divformat">
-						<div class = "col-form-label col-md-auto">
-						<label for = "dob" class="col-form-label col-md-auto">Date of Birth:</label>
+					<div class="row form-group">
+						<label for="txtDOB" class="col-sm-2 col-form-label"> Date of Birth: </label>
+		  
+						<div class="col-sm-4">
+						  <input type="date" id="txtDOB" name="txtDOB" class="form-control" placeholder="Date of Birth">
+						  
 						</div>
-						<div class = "col-md-auto">
-						<input type = "Date" id = "dob" name = "dob" required class ="form-control inputformat">
-						</div>
-						<div id="divDOBError" class = "invisible errorMessage"></div>
-					</div>
+						<div id="divDoBError" class="col-sm-10 invisible errorMessage"></div>
+					  </div>
 					</fieldset>
 
 					
